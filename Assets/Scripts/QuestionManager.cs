@@ -5,12 +5,23 @@ using UnityEngine.UI;
 
 public class QuestionManager : MonoBehaviour
 {
-    public Text counterText;
+    public Button false1;
+    public Button false2;
+    public GameObject falsetext;
 
-public void update()
+    void Start()
     {
-        
+        falsetext.SetActive(false);
+
+        false1.GetComponent<Button>();
+        false1.onClick.AddListener(OnClick);
+
+        false2.GetComponent<Button>();
+        false2.onClick.AddListener(OnClick);
     }
 
-   
+    void OnClick()
+    {
+        falsetext.SetActive(true);
+    }
 }

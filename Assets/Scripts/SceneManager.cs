@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SceneManager : MonoBehaviour
 {
+
      public void Scene2()
     {
         Application.LoadLevel(1);
